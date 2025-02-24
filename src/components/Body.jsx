@@ -80,11 +80,12 @@ const Body = () => {
     <>
       <div className="container mx-auto mt-3  bg-green-200 rounded-xl px-6 py-6 min-w-[100vh] min-h-[90vh] ">
         <div className="Add-Todo">
-          <h1 className="text-xl font-bold text-center">
+          <h1 className="text-lg font-bold text-center sm:text-xl md:text-2xl">
+
             {" "}
             Tasky - Your Daily Partner
-          </h1>
-          <h2 className="text-4xl  font-semibold mb-6 text-center mt-8">
+          <h2 className="text-2xl font-semibold mb-4 text-center mt-6 sm:text-3xl md:text-4xl md:mb-6 md:mt-8">
+
             Add ToDoS
           </h2>
           <input
