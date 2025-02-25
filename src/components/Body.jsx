@@ -10,10 +10,7 @@ const Body = () => {
 
   useEffect(() => {
     let todoString = localStorage.getItem("todos");
-    if (todoString) {
-      let todos = JSON.parse(localStorage.getItem("todos"));
-      setTodos(todos);
-    }
+    todoString && setTodos(JSON.parse(todoString));
   }, []);
 
   const toggleFinished = (e) => {
@@ -167,4 +164,4 @@ const Body = () => {
     </>
   )
 }
-export default Body 
+export default Body
